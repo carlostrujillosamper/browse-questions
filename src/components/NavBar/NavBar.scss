@@ -1,0 +1,25 @@
+@import '../../colors';
+@import '../../mixins';
+
+.NavBar{
+    height: 5.5%;
+    width: 100%;
+    background-color: $grey-blue-dark;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .NavBar-buttons{
+        margin-right: 1.4%;
+        button{
+            padding: 0.7rem;
+            color:white;
+            border: 0;
+            font-weight: bold;
+            background-color: $black;
+            margin-right: 0.8rem;
+            
+        }
+    }
+}
+
