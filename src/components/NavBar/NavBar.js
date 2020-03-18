@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './NavBar.scss'
 
-export default class NavBar extends Component {
-    render() {
+export default function NavBar() {
+   
         return (
             <div className='NavBar'>
                 <div className='NavBar-buttons'>
@@ -14,5 +14,5 @@ export default class NavBar extends Component {
                 </div>
             </div>
         )
-    }
+    
 }

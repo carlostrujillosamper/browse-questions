@@ -21,7 +21,6 @@ function App() {
       }
     };
     getQuestions();
-    console.log(questions);
   }, [isLoading]);
 
   const randomNumGen = (min, max) => {

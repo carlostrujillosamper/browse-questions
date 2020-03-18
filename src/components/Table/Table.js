@@ -85,8 +85,6 @@ function Table({ columns, data }) {
     useGlobalFilter,
     useSortBy,
     usePagination,
-
-
   );
 
   return (
