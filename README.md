@@ -4,7 +4,7 @@ Coding challenge consisting in replicating a design given in the form of an imag
 
 ## Technology used 
 
-React, React-Table, Hooks, Sass, Fetch API, Async/Await 
+**React, React-Table, Hooks, Sass, Fetch API, Async/Await**
 
 ### Clone
 
@@ -40,7 +40,7 @@ $ npm start
 
 - **Clean API response**
 
--Find rest of cases where strings of characters where used to replace special characters such as "" and '.
+- Find rest of cases where strings of characters where used to replace special characters such as "" and '.
 
 ```shell
 
