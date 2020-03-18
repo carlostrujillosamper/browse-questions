@@ -17,7 +17,6 @@ function GlobalFilter({
 
   return (
     <span className='input-wrapper'>
-      {/* Search Keyword{" "} */}
     
     <i class="fa fa-search" aria-hidden="true"></i>
                     
@@ -46,50 +45,6 @@ function GlobalFilter({
 
 
 
-function GlobalSelectFilter({
-    preGlobalFilteredRows,
-    globalFilter,
-    setGlobalFilter
-  }){
-    const count = preGlobalFilteredRows.length;
-    const options = React.useMemo(() => {
-        const options = new Set();
-        preGlobalFilteredRows.forEach(row => {
-          options.add(row.values["id"]);
-        });
-        return [...options.values()];
-      }, [ preGlobalFilteredRows]);
-    
-
-    return (
-      <span>
-        Search:{" "}
-        <select>
-          value={globalFilter || ""}
-          onChange={e => {
-            setGlobalFilter(e.target.value || undefined); 
-          }}
-          placeholder={`${count} records...`}
-          style={{
-            fontSize: "1.1rem",
-            border: "0"
-          }}
-      <option value="">All</option>
-      {options.map((option, i) => (
-        <option key={i} value={option}>
-          {option}
-        </option>
-      ))}
-
-    
-    </select>
-        
-
-      </span>
-    );
-  
-      
-  }
 
 function Table({ columns, data }) {
   const filterTypes = React.useMemo(
@@ -143,12 +98,6 @@ function Table({ columns, data }) {
         setGlobalFilter={setGlobalFilter}
       />
       </div>
-      {/* <GlobalSelectFilter
-      preGlobalFilteredRows={preGlobalFilteredRows}
-      globalFilter={state.globalFilter}
-      setGlobalFilter={setGlobalFilter}
-      /> */}
-
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (

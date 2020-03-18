@@ -30,8 +30,9 @@ function App() {
 
   const randomNames = ["Karen", "Noctithra", "Coldflame", "Avalica", "Codex"];
 
-  const finalDataArray = questions.map(question => ({
-    ...question,
+  const finalDataArray = questions.map(q => ({
+    ...q,
+    question: q.question.replace(/&quot;/g, '\"').replace(/&#039;/g, '\''),
     iD: randomNumGen(5000, 10000),
     createdBy: randomNames[randomNumGen(0, randomNames.length - 1)]
   }));
