@@ -1,0 +1,67 @@
+@import '../../colors';
+@import '../../mixins';
+@import '../../index';
+
+table {
+    border-spacing: 0;
+    border: 0.148rem solid #3A3A3A;
+    background-color: $black-light;
+    color: white;
+    width: 72.4%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    thead{
+        text-align: left;
+        background-color: $grey-dark;
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+    tr {
+      :last-child {
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
+    th,
+    td {
+      margin: 0;
+      padding: 0.5rem;
+      border-bottom: 0.148rem solid #3A3A3A;
+      border-right: 0.148rem solid #3A3A3A;
+      :last-child {
+        border-right: 0;
+      }
+    }
+    i{  margin-left: 0.5rem;
+        color: $green-light;
+    }
+  }
+
+  .pagination{
+      margin-top: 1%;
+      button{
+          margin-right: 0rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          padding-left: 2.14rem;
+          padding-right: 2.14rem;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: white;
+          background-color: $green-dark;
+          border: none;
+      }
+      button:focus{
+          outline: none;
+          background-color: $green-light;
+      }
+      .first-button{
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+      }
+      .last-button{
+          border-top-right-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+      }
+  }
