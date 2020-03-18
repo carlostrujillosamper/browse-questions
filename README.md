@@ -51,6 +51,10 @@ $ npm start
     createdBy: randomNames[randomNumGen(0, randomNames.length - 1)]
   }));
 ```
+- **Find exact font**
+
+- I suspect it is Tahoma, but it is behind a paywayll 
+
 
 ### Author
 

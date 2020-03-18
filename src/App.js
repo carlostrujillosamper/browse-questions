@@ -31,7 +31,7 @@ function App() {
 
   const finalDataArray = questions.map(q => ({
     ...q,
-    question: q.question.replace(/&quot;/g, '\"').replace(/&#039;/g, '\''),
+    question: q.question.replace(/&quot;/g, '"').replace(/&#039;/g, '\''),
     iD: randomNumGen(5000, 10000),
     createdBy: randomNames[randomNumGen(0, randomNames.length - 1)]
   }));
@@ -67,7 +67,8 @@ function App() {
     {
       Header: "Created By",
       accessor: "createdBy",
-      disableSortBy: true
+      disableSortBy: true,
+      
     }
   ];
   

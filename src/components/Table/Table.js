@@ -18,7 +18,7 @@ function GlobalFilter({
   return (
     <span className='input-wrapper'>
     
-    <i class="fa fa-search" aria-hidden="true"></i>
+    <i className="fa fa-search" aria-hidden="true"></i>
                     
 
       <input
@@ -105,7 +105,7 @@ function Table({ columns, data }) {
                   {column.render("Header")}
                   {column.render("Header") === "ID" ? (
                     <span>
-                      <i class="fa fa-sort" aria-hidden="true"></i>
+                      <i className="fa fa-sort" aria-hidden="true"></i>
                     </span>
                   ) : null}
                 </th>
