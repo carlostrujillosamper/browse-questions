@@ -23,6 +23,7 @@ function App() {
     getQuestions();
     console.log(questions);
   }, [isLoading]);
+
   const randomNumGen = (min, max) => {
     return Math.floor(Math.random() * max + min);
   };
@@ -35,7 +36,7 @@ function App() {
     createdBy: randomNames[randomNumGen(0, randomNames.length - 1)]
   }));
 
-  console.log(finalDataArray);
+
 
   const columns = [
     {
@@ -46,7 +47,7 @@ function App() {
     {
       Header: "Category",
       accessor: "category",
-      disableSortBy: true
+      disableSortBy: true,
     },
     {
       Header: "Type",
@@ -69,7 +70,7 @@ function App() {
       disableSortBy: true
     }
   ];
-
+  
   return (
     <div className="App">
       <NavBar></NavBar>
