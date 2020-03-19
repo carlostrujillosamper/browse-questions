@@ -7,6 +7,9 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   input:focus{
     outline: none;

@@ -135,7 +135,6 @@ function Table({ columns, data }) {
         <button onClick={() => gotoPage(1)}>{"2"}</button>
         <button onClick={() => gotoPage(2)}>{"3"}</button>
         <button onClick={() => gotoPage(3)}>{"4"}</button>
-
         <button className="last-button" onClick={() => nextPage()}>
           {">"}
         </button>
