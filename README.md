@@ -51,6 +51,10 @@ $ npm start
     createdBy: randomNames[randomNumGen(0, randomNames.length - 1)]
   }));
 ```
+- **Make web responsive**
+
+- The table is not fully responsive. It overlaps on mobile devices
+
 - **Find exact font**
 
 - I suspect it is Tahoma, but it is behind a paywayll 
